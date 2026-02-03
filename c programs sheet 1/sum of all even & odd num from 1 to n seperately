@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int n, evenSum=0 , oddSum=0;
+    printf("entter a positive integer n:");
+    scanf("%d",&n);
+    for(int i=1 , i<=n , i++){
+        if(int i%2 == 0){
+            evenSum += i;
+        
+        }else{
+            oddSum += i
+        }
+    }
+        printf("sum of even numbers from 1 to %d :\n", n,evenSum);
+        printf("sum of odd numbers from 1 to %d :\n", n,oddSum);
+        return 0;
+       }

@@ -1,0 +1,21 @@
+#include <stdio.h>
+struct student{
+    int roll;
+    char name[50];
+    float marks;
+};
+int main(){
+    struct student S[5];
+    int i, maxIndex=0;
+    for(i=0 ; i<5 ; i++){
+        printf("enter roll, name, marks of student %d:", i+1);
+        scanf("%d %s %f", &S[i].roll, &S[i].name, &S[i].marks);
+    }
+    for(i=1 ; i<5 ; i++){
+        if(S[i].marks > S[maxIndex].marks){
+            maxIndex = i;
+        }
+    }
+        printf("\ntopper:\tRoll= %d  name= %s  marks= %.2f\n", S[maxIndex].roll, S[maxIndex].name, S[maxIndex].marks);
+        return 0;
+    }
