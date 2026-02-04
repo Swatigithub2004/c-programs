@@ -21,3 +21,4 @@ if(flag){
     printf("string is not a palindrome.\n");
 }
 }
+c
